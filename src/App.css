@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+ul li {
+  list-style: none;
+}
+
+div {
+  border: 1px solid red
+}
+
+.site-wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas: 
+  "h h"
+  "n c"
+}
+
+.header {
+  grid-area: h;
+  background-color: blue;
+}
+
+.header img {
+width: 60px;
+}
+
+.nav {
+  grid-area: n;
+  background-color: green;
+}
+
+.content {
+  grid-area: c;
+  background-color: yellow;
+}
+
+.content img {
+  width: 100%;
+  object-fit: cover;
+}
